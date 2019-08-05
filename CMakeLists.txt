@@ -51,6 +51,7 @@ message(STATUS "CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
 # packages
 
 find_package(Threads QUIET)
+find_package(hdf5 CONFIG REQUIRED)
 
 macro(target_link_threads NAME)
   if(THREADS_HAVE_PTHREAD_ARG)
